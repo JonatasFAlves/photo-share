@@ -18,25 +18,27 @@
 
 <body>
     <!-- First post -->
+    
+    <i class="fas fa-arrow-left clickable"></i>
 
     <div class="post">
-        <i class="fas fa-long-arrow-alt-left"></i>
 
         <div class="user">
-            <img src="./assets/user/user1.jpg" alt="User image">
+            <img src="./assets/user/user1.png" alt="User image">
             
             <div class="user-info">
-                <p class="user-name">Jordan</p>
-                <p class="time">TODAY AT 19:32</p>
+                <p class="user-name no-margin clickable">Jordan</p>
+                <p class="time no-margin">TODAY AT 19:32</p>
             </div>
     
-            <i class="fas fa-ellipsis-h"></i>
+            <p class="no-margin clickable"><strong>...</strong></p>
         </div>
     
         <hr />
     
         <div class="card">
-            <p class="card-title">Beatiful place</p>
+            <p class="card-title no-margin clickable">Beatiful place</p>
+
             <div class="card-info">
                 <p>3 Days ago</p>
                 <p>362 Participants</p>
@@ -50,10 +52,8 @@
                 </div>
             </div>
     
-            <div class="buttons">
-                <button><i class="far fa-comment-alt"></i></button>
-                <button><i class="fas fa-heart"></i></button>
-            </div>
+            <button class="comment-button card-button clickable"><i class="fas fa-comment-alt"></i></button>
+            <button class="like-button card-button clickable"><i class="fas fa-heart"></i></button>
         </div>
     </div>
 
@@ -64,26 +64,26 @@
 
     <div class="post">
 
-        <div class="user">
+            <div class="user">
                 <img src="./assets/user/user2.png" alt="User image">
-        
+                
                 <div class="user-info">
                     <p class="user-name no-margin clickable">Donald</p>
                     <p class="time no-margin">TODAY AT 21:15</p>
                 </div>
         
                 <p class="no-margin clickable"><strong>...</strong></p>
-        </div>
+            </div>
         
-        <hr />
-
-        <div class="card">
+            <hr />
+        
+            <div class="card">
                 <p class="card-title no-margin clickable">Lingering Charm</p>
     
                 <div class="card-info">
                     <p>3 Days ago</p>
                     <p>362 Participants</p>
-            </div>
+                </div>
         
                 <div class="card-images-three">
                     <img src="./assets/card/card4.png" alt="Main card image">
