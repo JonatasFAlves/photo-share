@@ -15,9 +15,39 @@
    #GLOBAL
 \*-------------------------------*/
 
-html, body {
-    width: 300px;
-    margin: 26px auto;
+body {
+    width: 470px;
+    margin: 12px auto;
+    padding: 16px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #eee;
+}
+
+hr {
+    color: white;
+    border-width: 0.1px;
+}
+
+.no-margin {
+    margin: 0;
+    padding: 0;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.card-button {
+    margin-right: 12px;
+    width: 60px;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+img {
+    cursor: pointer;
 }
 
 
