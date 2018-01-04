@@ -1,11 +1,44 @@
+/**
+ * TABLE OF CONTENTS 
+ *
+ * GLOBAL ..................... Global settings.
+ *
+ * FULLPOST ................... Attributes for the full post.
+ * 
+ * USER ....................... Attributes for the user in the post.
+ *
+ * CARD ....................... Attributes for the card in the post.
+ *
+ */
+
+/*-------------------------------*\
+   #GLOBAL
+\*-------------------------------*/
+
 html, body {
     width: 300px;
     margin: 26px auto;
 }
 
+
+
+
+
+/*-------------------------------*\
+   #POST
+\*-------------------------------*/
+
 .post {
     width: 100%;
 }
+
+
+
+
+
+/*-------------------------------*\
+   #USER
+\*-------------------------------*/
 
 .user {
     display: flex;
@@ -23,18 +56,22 @@ html, body {
         margin-left: -30%;
     }
 
-    .user .user-info p:nth-child(1) {
-        font-size: 30px;
-        margin: 0 12px;
-    }
+        .user .user-info .user-name {
+            font-size: 30px;
+            margin: 0 12px;
+        }
 
-    .user .user-info p:nth-child(2) {
-        margin: 0 12px;
-    }
-
-
+        .user .user-info .time {
+            margin: 0 12px;
+        }
 
 
+
+
+
+/*-------------------------------*\
+   #CARD
+\*-------------------------------*/
 
 .card {}
 
