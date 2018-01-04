@@ -139,7 +139,7 @@ img {
 
         .card .card-images img {
             border-radius: 6px;
-            width: 60%;
+            width: 47%;
         }
 
         .card .card-images .secondary-images {
@@ -206,5 +206,9 @@ img {
 
     .user .user-info {
         margin-left: -50%;
+    }
+
+    .card .card-images img {
+        width: 60%;
     }
 }
