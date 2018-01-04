@@ -9,6 +9,8 @@
  *
  * CARD ....................... Attributes for the card in the post.
  *
+ * MEDIA ...................... Media queries for smaller screens.
+ *
  */
 
 /*-------------------------------*\
@@ -138,4 +140,73 @@ img {
 
         .card .card-images .secondary-images img:nth-child(1) {
             margin-bottom: 8px;
+        }   border-radius: 6px;
+            width: 60%;
         }
+
+        .card .card-images .secondary-images {
+            display: flex;
+            flex-direction: column;
+            margin-left: 2%;
+        }
+
+        .card .card-images .secondary-images img{
+            box-sizing: border-box;
+            width: 38%;
+            height: 50%;
+        }
+
+        .card .card-images .secondary-images img:nth-child(1) {
+            margin-bottom: 8px;
+        }
+
+    /* Posts using three main images */
+    .card .card-images-three {
+        display: flex;
+        width: 160%;
+        margin-bottom: 16px;
+    }
+
+        .card .card-images-three img {
+            width: 20%;
+            border-radius: 6px;
+            margin-right: 1%;
+        }
+
+        .card .card-images-three img:nth-of-type(3) {
+            margin-right: 0;
+        }
+
+
+    .card .comment-button {
+        background: #6DC3FB;
+        box-shadow: 3px 3px 3px rgba(88, 158, 204, 0.466);
+    }
+        
+    .card .like-button {
+        background: #5CE6D6;
+        box-shadow: 3px 3px 3px rgba(66, 163, 152, 0.459);
+    }
+
+
+
+
+
+/*-------------------------------*\
+   #MEDIA
+\*-------------------------------*/
+
+@media (max-width: 500px) {
+    body {
+        width: 280px;
+    }
+
+    .user img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .user .user-info {
+        margin-left: -50%;
+    }
+}
