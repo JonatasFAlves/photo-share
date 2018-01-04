@@ -62,6 +62,11 @@ img {
 
 .post {
     width: 100%;
+    margin-top: 32px;
+}
+
+.post:nth-of-type(2) {
+    margin-top: 80px;
 }
 
 
@@ -79,22 +84,23 @@ img {
 }
 
     .user img {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
     }
 
     .user .user-info {
-        margin-left: -30%;
+        margin-left: -65%;
     }
 
         .user .user-info .user-name {
-            font-size: 30px;
-            margin: 0 12px;
+            font-size: 120%;
+            margin-bottom: 4px;
         }
 
         .user .user-info .time {
-            margin: 0 12px;
+            font-size: 9px;
+            color: #aaa;
         }
 
 
@@ -107,14 +113,23 @@ img {
 
 .card {}
 
-    .card .card-title {}
+    .card .card-title {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 6px;
+    }
 
     .card .card-info {
         display: flex;
     }
-        .card .card-info p:nth-child(1) {
+
+        .card .card-info p {
             margin-right: 26px;
+            color: rgb(92, 92, 92);
+            font-size: 9px;
         }
+        
 
     .card .card-images {
         display: flex;
@@ -123,24 +138,7 @@ img {
     }
 
         .card .card-images img {
-            width: 60%;
-        }
-
-        .card .card-images .secondary-images {
-            display: flex;
-            flex-direction: column;
-            margin-left: 2%;
-        }
-
-        .card .card-images .secondary-images img{
-            box-sizing: border-box;
-            width: 38%;
-            height: 50%;
-        }
-
-        .card .card-images .secondary-images img:nth-child(1) {
-            margin-bottom: 8px;
-        }   border-radius: 6px;
+            border-radius: 6px;
             width: 60%;
         }
 
