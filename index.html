@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Custom css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
     
     <!-- Font awesome icons -->
     <script src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    
+    <!-- For modal -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <title>Photo Share</title>
 </head>
@@ -52,8 +58,12 @@
                 </div>
             </div>
     
-            <button class="comment-button card-button clickable"><i class="fas fa-comment-alt"></i></button>
-            <button class="like-button card-button clickable"><i class="fas fa-heart"></i></button>
+            <div>
+                <button class="comment-button card-button clickable"><i class="fas fa-comment-alt"></i></button>
+                <button class="like-button card-button clickable"><i class="fas fa-heart"></i></button>
+                <button class="share-button card-button clickable" data-toggle="modal" data-target="#myModal"><i class="fas fa-share-alt"></i></button>
+            </div>
+            
         </div>
     </div>
 
@@ -89,6 +99,44 @@
                     <img src="./assets/card/card4.png" alt="Main card image">
                     <img src="./assets/card/card5.png" alt="First secondary image">
                     <img src="./assets/card/card6.png" alt="Second secondary image">
+                </div>
+                
+                <div>
+                    <button class="comment-button card-button clickable"><i class="fas fa-comment-alt"></i></button>
+                    <button class="like-button card-button clickable"><i class="fas fa-heart"></i></button>
+                    <button class="share-button card-button clickable" data-toggle="modal" data-target="#myModal"><i class="fas fa-share-alt"></i></button>
+                </div>
+                
+            </div>
+        </div>
+    
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Compartilhar</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                         <!-- Facebook -->
+                        <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
+                            <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+                        </a>
+                        <!-- Twitter -->
+                        <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+                            <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+                        </a>
+                        <!-- Google+ -->
+                        <a href="https://plus.google.com/share?url=https://simplesharebuttons.com" target="_blank">
+                            <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
